@@ -4,36 +4,63 @@
 		<link rel ="stylesheet" href = "ToyotaAuris.css">
 		<title>Toyota Auris</title>
 		<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
 			table, th, td {
-			  border: 1px solid black;
+			border: 1px solid black;
 			}
 			.Jokes {
 				border: 5px outset red;
-  				background-color: cornflowerblue;    
-  				text-align: center;
+				background-color: cornflowerblue;    
+				text-align: center;
 				color:black;	
 			}
 			h1 {
 				background-color:cornflowerblue;
 			}
 		</style>
-	</head>
-	<body>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			  <div class="navbar-header">
+				<a class="navbar-brand" href="#">Toyota Auris</a>
+			  </div>
+			  <ul class="nav navbar-nav">
+				<li><a href="#Introduction">Introduction</a></li>
+				<li><a href="#History">History</a></li>
+				<li><a href="#References">References</a></li>
+			  </ul>
+			</div>
+		</nav>
+		
+			
+	
+	
 		<h1 style = "text-align: center;" class = "header"> Toyota Auris </h1>
 			<p style = "text-align: center;"><i> By: Charif Sukkar </i></p>
 			<hr>
-			<b>Introduction</b>
+			<b id= "Introduction">Introduction</b>
 			<p>The Toyota Auris is a compact car derived from the Corolla, manufactured and sold by Toyota. 
 				Introduced in 2006, the first generation three/five-door hatchback shared the platform with the E150 series Corolla, while the second generation five-door hatchback and station wagon called "Touring Sports" uses the E180 platform. </p>
 		<img src= "Toyota_Auris.jpg" alt = "Toyota Auris" width = '500'>
-		<h2> History of the Auris</h2>
+		<h2 id= "History"> History of the Auris</h2>
 			<p> The "Auris" name is based on the Latin word for "gold", "aurum".</p>
-			<ol>
+		<!--	<ol>
 				<li> First Generation (E150; 2006) </li>
 				<li> Second Generation (E180; 2012)</li> 
 				<li> Third Generation  (E210; 2018)</li>		
 			</ol>
+		-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-4" style="background-color: red;">.First Generation (E150; 2006) </div>
+				<div class="col-sm-4" style="background-color: cornflowerblue;">Second Generation (E180; 2012) </div>
+				<div class="col-sm-4" style="background-color: red;">Third Generation  (E210; 2018) </div>
+			</div>
+		</div>
+
 		<div class="Jokes">
 				<h3>Safety Records</h3>
 				<p> The Auris received a five star cabin protection rating from Euro NCAP for adults, but four stars for children.</p>
@@ -121,7 +148,7 @@
 				  </tr>
 					
 			</table>
-		<h5>References</h5>
+		<h5 id= "References">References</h5>
 				<a href = "https://en.wikipedia.org/wiki/Toyota_Auris" target= "_blank" > Wikipedia </a>
 
 	</body>
