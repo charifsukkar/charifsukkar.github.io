@@ -23,39 +23,47 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<script>
-		  $(document).ready(function() {
-			$("img").click(function() {
-				$("#Auris_Pic").attr("src", "Toyota_Auris_Gen1.jpg")
-				$("#Auris_Pic").attr("src", "Toyota_Auris_Gen2.jpg")
-				$("p").append("bateekh");
-			});
-       	 });
 		
-		
-    var links = [
-    "abc.org",
-    "def.org",
-    "ghi.org",
-    "ghi33.org"
-    ];
-    var images = [
-    "https://dmcfebaedy6rh.cloudfront.net/product/front/white/spl5596.360x180.1443167798.jpg",
-    "https://dmcfebaedy6rh.cloudfront.net/product/front/white/mt6050.360x180.1430798334.jpg",
-    "https://dmcfebaedy6rh.cloudfront.net/product/front/white/pl5087.360x180.1423189940.jpg", 
-    "https://dmcfebaedy6rh.cloudfront.net/product/front/white/spl5596.360x180.1443167798.jpg"
-    ];
-    var i = 0;
-    var renew = setInterval(function(){
-        if(links.length == i){
-            i = 0;
-        }
-        else {
-        document.getElementById("bannerImage").src = images[i]; 
-        document.getElementById("bannerLink").href = links[i]; 
-        i++;
 
-    }
-    },10000);
+
+
+
+
+var count = 1  ;
+setInterval(myTimer, 20000);
+
+function myTimer() {
+  const d = new Date();
+		count = (count++ )% 4  +1; 		
+		$("#Auris_Pic").attr("src", "Toyota_Auris_Gen" + count + ".jpg");
+  
+		
+
+switch(count) {
+  case 1:
+  document.getElementById("mouse").innerHTML = "<h1> Generation 1 </h1>";
+    break;
+  case 2:
+   document.getElementById("mouse").innerHTML = "<h1> Generation 2  </h1>";
+    break;
+  case 3:
+    document.getElementById("mouse").innerHTML = "<h1> Generation 3  </h1>";
+    break;
+  case 4:
+  document.getElementById("mouse").innerHTML = "<h1> Generation 4  </h1>";
+    break;
+  default:
+;
+}
+
+	
+  
+}
+
+
+		
+		
+
 </script>
 		
 		</script>
@@ -202,8 +210,9 @@
 
 		<p id="Images"> Images</p>
 
-		<div class="imgDiv">
+		<div id="imgDiv">
 			<img id= "Auris_Pic" src= "Toyota_Auris.jpg" alt = "Toyota Auris" width = '500'/>
+			<p id="mouse"> </p>
 		</div>
 		
 
@@ -211,5 +220,7 @@
 		<h5 id= "References">References</h5>
 				<a href = "https://en.wikipedia.org/wiki/Toyota_Auris" target= "_blank" > Wikipedia </a>
 
+	
+	<p id="demo"></p>
 	</body>
 </html>
