@@ -36,7 +36,7 @@
 			$(".Configuration").append(response.engine.configuration);
 			$(".Front").append(response.brakes.front);
 			$(".Back").append(response.brakes.back);
-			$(".table-responsive").append(response.imageURL);
+			$(".table-responsive").append("<img src = "+response.imageURL+">");
 
 			}
 		})
