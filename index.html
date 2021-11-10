@@ -32,7 +32,7 @@
 			//$(".Bandemic").append(response.type+response.size+response.name+response.configuration+response.year);
 			$(".Name").append(response.name);
 			$(".Year").append(response.year);
-			$(".Engine").append(response.engine);
+			$(".Type").append(response.engine.type);
 			}
 		})
 		// $(document).ready(function(){
@@ -284,13 +284,9 @@ switch(count) {
 							<th>Brakes</th>
 						</tr>
 						<tr>
-							<td class= "Name"> </td>
-						</tr>
-						<tr>
-							<td class= "Year"></td>
-						</tr>
-						<tr>
-							<td class= "Engine"></td>
+							<td class= "Name"> </td>				
+							<td class= "Year"></td>						
+							<td class= "Type"></td>
 						</tr>
 					</table>
 					</div>
