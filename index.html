@@ -33,6 +33,10 @@
 			$(".Name").append(response.name);
 			$(".Year").append(response.year);
 			$(".Type").append(response.engine.type);
+			$(".Size").append(response.engine.size);
+			$(".Configuration").append(response.engine.configuration);
+			$(".Front").append(response.brakes.front);
+			$(".Back").append(response.brakes.back);
 			}
 		})
 		// $(document).ready(function(){
@@ -278,15 +282,21 @@ switch(count) {
 						<tr>
 							<th>Name</th>
 							<th>Year</th>
-							<th>Type</th>
-							<th>Size</th>
-							<th>Configuration</th>
-							<th>Brakes</th>
+							<th>Engine Type</th>
+							<th>Engine Size</th>
+							<th>Engine Configuration</th>
+							<th>Front Brakes</th>
+							<th>Back Brakes</th>
 						</tr>
 						<tr>
 							<td class= "Name"> </td>				
 							<td class= "Year"></td>						
 							<td class= "Type"></td>
+							<td class= "Size"></td>
+							<td class= "Configuration"></td>
+							<td class= "Front "></td>
+							<td class= "Back"></td>
+
 						</tr>
 					</table>
 					</div>
