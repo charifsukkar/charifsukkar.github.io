@@ -28,8 +28,7 @@
 			url:"Mercedes_SLS.json",
 			success:function(response){
 			console.log(response)
-			// $(".table-responsive").append("year"+response.year+"Size"+response.size+"Name"+response.name+"Configuration"+response.configuration);
-			//$(".Bandemic").append(response.type+response.size+response.name+response.configuration+response.year);
+		
 			$(".Name").append(response.name);
 			$(".Year").append(response.year);
 			$(".Type").append(response.engine.type);
@@ -39,20 +38,6 @@
 			$(".Back").append(response.brakes.back);
 			}
 		})
-		// $(document).ready(function(){
-		// 	$.getJSON( "Mercedes_SLS.json" , function(data) {
-		// 		var mercedes_data = '';
-		// 		$.each(data, function(key, value){
-		// 			mercedes_data += '<tr>';
-		// 			mercedes_data += '<td>' +value.type+'</td>';
-		// 			mercedes_data += '<td>' +value.size+'</td>';
-		// 			mercedes_data += '<td>'+value.configuration+'</td>';
-		// 			mercedes_data += '</tr>';
-		// 		});
-		// 		$('#mercedes_table').append(mercedes_data);
-		// 	});
-		// });
-
 		</script>
 		<script>
 		
