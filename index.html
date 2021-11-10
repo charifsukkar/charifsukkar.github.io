@@ -29,8 +29,10 @@
 			success:function(response){
 			console.log(response)
 			// $(".table-responsive").append("year"+response.year+"Size"+response.size+"Name"+response.name+"Configuration"+response.configuration);
-			$(".Bandemic").append(response.type+response.size+response.name+response.configuration+response.year);
-			$(".Type").append(response.type);
+			//$(".Bandemic").append(response.type+response.size+response.name+response.configuration+response.year);
+			$(".Name").append(response.name);
+			$(".Year").append(response.year);
+			$(".Engine").append(response.engine);
 			}
 		})
 		// $(document).ready(function(){
@@ -274,17 +276,22 @@ switch(count) {
 					<div class= "table-responsive">
 					<table class = "table table-bordered table-striped" id="mercedes_table">
 						<tr>
+							<th>Name</th>
+							<th>Year</th>
 							<th>Type</th>
 							<th>Size</th>
 							<th>Configuration</th>
-							<th>Year</th>
+							<th>Brakes</th>
 						</tr>
 						<tr>
-							<td class= "Bandemic"> </td>
+							<td class= "Name"> </td>
 						</tr>
 						<tr>
-							<td class= "Type"></td>
-						</th>
+							<td class= "Year"></td>
+						</tr>
+						<tr>
+							<td class= "Engine"></td>
+						</tr>
 					</table>
 					</div>
 				</div>
