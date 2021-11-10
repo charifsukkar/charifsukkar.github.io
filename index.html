@@ -36,12 +36,14 @@
 			$(".Configuration").append(response.engine.configuration);
 			$(".Front").append(response.brakes.front);
 			$(".Back").append(response.brakes.back);
+			$(".table table-bordered table-striped").prepend(response.imageURL);
+
 			}
 		})
 		</script>
 		<script>
 		
-
+ 
 
 
 
@@ -263,7 +265,7 @@ switch(count) {
 	
 				<div class= "container">
 					<div class= "table-responsive">
-					<table class = "table table-bordered table-striped" id="mercedes_table">
+					<table class = "table table-bordered table-striped">
 						<tr>
 							<th>Name</th>
 							<th>Year</th>
