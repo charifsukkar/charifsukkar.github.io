@@ -29,7 +29,7 @@
 			success:function(response){
 			console.log(response)
 			$(".table-responsive").append("year"+response.year+"Size"+response.size+"Name"+response.name+"Configuration"+response.configuration);
-
+			$(".Type").append(response.type);
 			}
 		})
 		// $(document).ready(function(){
@@ -273,9 +273,10 @@ switch(count) {
 					<div class= "table-responsive">
 					<table class = "table table-bordered table-striped" id="mercedes_table">
 						<tr>
-							<th>Type</th>
+							<th class= "Type">Type</th>
 							<th>Size</th>
 							<th>Configuration</th>
+							<th>Year</th>
 						</tr>
 					</table>
 					</div>
