@@ -28,7 +28,8 @@
 			url:"Mercedes_SLS.json",
 			success:function(response){
 			console.log(response)
-			$(".table-responsive").append("year"+response.year+"Size"+response.size+"Name"+response.name+"Configuration"+response.configuration);
+			// $(".table-responsive").append("year"+response.year+"Size"+response.size+"Name"+response.name+"Configuration"+response.configuration);
+			$(".Bandemic").append(response.type+response.size+response.name+response.configuration+response.year);
 			$(".Type").append(response.type);
 			}
 		})
@@ -278,7 +279,7 @@ switch(count) {
 							<th>Configuration</th>
 							<th>Year</th>
 						</tr>
-						<tr>
+						<tr class= "Bandemic">
 							<th class= "Type"></th>
 						</tr>
 					</table>
