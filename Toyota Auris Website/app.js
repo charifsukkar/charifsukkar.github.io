@@ -1,3 +1,4 @@
+<script>
 var express = require('express');
 var app = express();
 
@@ -49,3 +50,5 @@ app.post('/books/addbook', function(req, res){
 
 
 app.listen(3000);
+
+</script>

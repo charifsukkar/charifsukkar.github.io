@@ -1,0 +1,7 @@
+{"books":[
+    {"title": "Frankenstein", "author": "Mary Shelly", "publisher":  "Public Domain", "date": 1993, "website": "https://www.gutenberg.org/ebooks/84"},
+    {"title": "Pride and Prejudice", "author": "Jane Austen", "publisher":  "Public Domain", "date": 1998, "website": "https://www.gutenberg.org/ebooks/1342"},
+    {"title": "Moby Dick", "author": "Herman Melville", "publisher":  "Public Domain", "date": 2001, "website": "https://www.gutenberg.org/ebooks/2701"},   
+    {"title": "Dracula", "author": "Bram Stoker", "publisher":  "Public Domain", "date": 1995, "website": "https://www.gutenberg.org/ebooks/345"}, 
+    {"title": "War and Peace", "author": "Leo Tolstoy", "publisher":  "Public Domain", "date": 2001, "website": "https://www.gutenberg.org/ebooks/2600"} 
+]}
